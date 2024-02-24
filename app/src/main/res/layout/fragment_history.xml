@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/idSearch"
+        android:layout_width="match_parent"
+        android:layout_margin="5sp"
+        android:layout_height="45sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:keyboardNavigationCluster="true"
+        android:lines="2"
+        android:imeOptions="actionSearch"
+        android:hint="Paste Address To Fetch ETH Transactions"
+        android:textColorHint="#79FFFFFF"
+        android:background="@drawable/edit_text_border"
+        android:inputType="text" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/noTransactionFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:text="NO ETH TRANSACTIONS FOUNDED"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50sp"
+        android:background="@color/appThemeColor"
+        android:scrollIndicators="left"
+        android:scrollbarSize="5sp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical" />
+
+
+</FrameLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appThemeColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.CryptPay"
+    tools:context=".HomeFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="344sp"
+        android:layout_height="479sp"
+        app:cardBackgroundColor="@color/appThemeColor"
+        app:cardCornerRadius="26sp"
+        app:cardElevation="26sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="344sp"
+                android:layout_height="147sp"
+                android:layout_marginEnd="2sp"
+                app:cardBackgroundColor="#460B0F12"
+                app:cardCornerRadius="26sp"
+
+
+                app:cardElevation="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.128"
+                tools:ignore="NotSibling">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+
+                        android:outlineProvider="bounds"
+
+                        app:cardBackgroundColor="#008170"
+                        app:cardCornerRadius="64sp"
+                        app:cardElevation="90sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.057"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.483">
+
+                        <ImageView
+                            android:id="@+id/ivPay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/send_money" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView4"
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+
+                        android:outlineProvider="bounds"
+
+
+                        app:cardBackgroundColor="#008170"
+                        app:cardCornerRadius="64sp"
+                        app:cardElevation="90sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.942"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.516">
+
+                        <ImageView
+                            android:id="@+id/ivReceived"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/receive_money" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView"
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+
+                        android:outlineProvider="bounds"
+
+                        app:cardBackgroundColor="#008170"
+                        app:cardCornerRadius="12sp"
+                        app:cardElevation="90sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <ImageView
+                            android:id="@+id/ivScanner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/scan" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16sp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Send ETH"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                        app:layout_constraintVertical_bias="0.384" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8sp"
+                        android:text="Scan To Send"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.469"
+                        app:layout_constraintStart_toStartOf="@+id/textView4"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView"
+                        app:layout_constraintVertical_bias="0.058" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Received ETH"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.8"
+                        app:layout_constraintStart_toEndOf="@+id/textView5"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView4"
+                        app:layout_constraintVertical_bias="0.304" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="259sp"
+                app:cardBackgroundColor="#00071001"
+                android:layout_margin="5sp"
+                app:cardCornerRadius="15sp"
+
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView5"
+                app:layout_constraintVertical_bias="1.0" >
+
+                <ImageView
+                    android:id="@+id/ivUserScanner"
+                    android:layout_width="200sp"
+                    android:layout_height="200sp"
+                    android:background="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25sp"
+
+                    android:src="@drawable/scan"
+                    android:contentDescription="User Qr" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/white"
+                    android:text="address"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:textSize="13sp"
+                   android:layout_marginStart="15sp"
+                    android:layout_marginBottom="10sp"/>
+
+                <TextView
+                    android:id="@+id/balanceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/balance"
+
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/balanceShowHide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Balance"
+                    android:textSize="7sp"
+                    android:visibility="invisible"
+                    android:layout_marginStart="70sp"
+                    android:layout_marginTop="5sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal"/>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

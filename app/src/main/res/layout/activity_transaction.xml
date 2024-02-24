@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".eth.TransactionActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="137dp"
+        android:layout_height="142dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/send_money" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="522sp"
+        android:layout_margin="24sp"
+        android:foregroundGravity="center"
+        app:cardBackgroundColor="@color/appThemeColor"
+        app:cardCornerRadius="26sp"
+        app:cardElevation="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Send Tokens"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0sp"
+            android:layout_marginTop="70sp"
+            android:text="Balance:" />
+
+        <TextView
+            android:id="@+id/balanceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70sp"
+            android:layout_marginEnd="80sp"
+            android:text="@string/balance" />
+
+        <EditText
+            android:id="@+id/editTextValueInEth"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_text_border"
+            android:hint="Enter Value of ETH"
+            android:textColorHint="#B5C0D0"
+            android:gravity="center"
+            android:layout_marginTop="10sp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+             />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:ems="10"
+            android:hint="Enter Wallet Password"
+            android:textColorHint="#B5C0D0"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/edit_text_border"
+            android:inputType="text"
+            android:layout_marginTop="120sp"
+            tools:ignore="TextFields" />
+        <Button
+            android:id="@+id/btnPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:background="#0C359E"
+            android:hapticFeedbackEnabled="true"
+            android:layout_gravity="bottom"
+            />
+        <EditText
+            android:id="@+id/lowBalanceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="210sp"
+            android:textAllCaps="true"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            android:text="Low balance "
+            />
+
+        <EditText
+            android:id="@+id/wrongPasswordTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="320sp"
+            android:textAllCaps="true"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            android:text="Wrong Password"
+            />
+        <EditText
+            android:id="@+id/editTextToAddress"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_text_border"
+            android:hint="Enter Receiver Address"
+            android:textColorHint="#B5C0D0"
+            android:gravity="center"
+            android:layout_marginBottom="90sp"
+            android:ems="10"
+            android:inputType="text"
+            />
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0sp"
+            android:layout_marginTop="100sp"
+            android:text="Your Address:" />
+        <TextView
+            android:id="@+id/senderAddressTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110sp"
+            android:layout_marginTop="100sp"
+            android:text="your address:" />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

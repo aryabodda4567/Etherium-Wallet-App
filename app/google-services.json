@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "415998371740",
+    "firebase_url": "https://crypto-pay-4dbb6-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "crypto-pay-4dbb6",
+    "storage_bucket": "crypto-pay-4dbb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415998371740:android:73d1976acaa5a4620a0a59",
+        "android_client_info": {
+          "package_name": "com.android.cryptpay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415998371740-0in9kbmpk9mnlstjlnu15m2qkh2vfth4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.cryptpay",
+            "certificate_hash": "650b7a359ab50b08e13e6104359f8ac4b9921b54"
+          }
+        },
+        {
+          "client_id": "415998371740-2durrfgjaq7runca00c5hu4o9jide5gm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG_NunShKa2molSWFrXteIwc-7nzzmGaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "415998371740-2durrfgjaq7runca00c5hu4o9jide5gm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

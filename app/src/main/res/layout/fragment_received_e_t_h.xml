@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryFragment">
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/noTransactionFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:text="NO ETH TRANSACTIONS FOUNDED"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/receivedHistoryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:background="@color/appThemeColor"
+        android:scrollIndicators="left"
+        android:scrollbarSize="5sp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical" />
+
+
+</FrameLayout>

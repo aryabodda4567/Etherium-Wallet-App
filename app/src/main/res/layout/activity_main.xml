@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- FrameLayout for hosting fragments -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabLayout" />
+
+    <!-- TabLayout at the bottom -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/appThemeColor"
+        android:elevation="10dp"
+        app:tabSelectedTextAppearance="@font/roboto_bold"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorHeight="1dp"
+        android:scrollIndicators="bottom"
+        app:tabIndicatorAnimationDuration="@android:integer/config_longAnimTime"
+        android:minHeight="?attr/actionBarSize">
+
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:icon="@drawable/home" />
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabHistory"
+            android:layout_width="wrap_content"
+            android:text="@string/history"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/transaction_history" />
+
+
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabSettings"
+            android:layout_width="wrap_content"
+            android:text="@string/settings"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/setting" />
+
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+</RelativeLayout>

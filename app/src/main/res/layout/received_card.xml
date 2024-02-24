@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:id="@+id/receivedCardView"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <!-- Value -->
+        <TextView
+            android:id="@+id/rtext_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:text="Value" />
+
+        <!-- Gas Used -->
+        <TextView
+            android:id="@+id/rtext_gas_used_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rtext_value"
+            android:text="Gas Used:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <!-- To Address -->
+        <TextView
+            android:id="@+id/rtext_gas_used_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="24sp"
+            android:layout_toEndOf="@+id/rtext_gas_used_label"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rtext_to_address_label"
+            android:layout_below="@id/rtext_gas_used_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rtext_to_address_value"
+            android:layout_toEndOf="@id/rtext_to_address_label"
+            android:layout_below="@id/rtext_gas_used_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2sp"
+            android:layout_marginStart="2sp"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+
+        <!-- Time -->
+        <TextView
+            android:id="@+id/rtext_time_label"
+            android:layout_below="@id/rtext_to_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On :"
+            android:layout_marginTop="5sp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rtext_time_value"
+            android:layout_toEndOf="@id/rtext_time_label"
+            android:layout_below="@id/rtext_to_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5sp"
+            android:textSize="16sp" />
+
+        <!-- Block Number -->
+        <TextView
+            android:id="@+id/rtext_block_number_label"
+            android:layout_below="@id/rtext_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block Number:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rtext_block_number_value"
+            android:layout_toEndOf="@id/rtext_block_number_label"
+            android:layout_below="@id/rtext_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
