@@ -1,7 +1,7 @@
 
 **Ethereum Wallet Android App (Web3j & Infura)**
 
-This Android application empowers users to manage their Ethereum wallets on the go.
+This Android application allows users to manage their Ethereum wallets directly on their mobile devices. It utilizes Web3j library for interacting with the Ethereum blockchain and Infura for accessing blockchain data. Firebase is used for user authentication.
 
   **Effortless User Registration:**
          Register with Firebase using Google login,   create an Ethereum account directly with a password.
